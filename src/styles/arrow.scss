@@ -1,0 +1,99 @@
+// // still on test - trying with absolute positioning
+// .arrow-relative {
+//   position: relative;
+//   padding-top: 2rem;
+
+//   .arrow-absolute {
+//     position: absolute;
+
+//     width: auto;
+//     height: auto;
+
+//     top: 80%;
+//     left: 0;
+//     right: 0;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     margin-inline: auto;
+
+//     .arrow {
+//       width: 20px;
+//       height: 20px;
+//       rotate: -45deg;
+//       border: 2px solid #00df9a;
+//       border-top: 0;
+//       border-right: 0;
+//       margin: 0;
+//       padding: 0;
+//       //   was trying with different durations
+//       &:nth-child(1) {
+//         opacity: 0.1;
+//         animation: arrowDown 0.5s ease-in infinite alternate 0.2s;
+//       }
+//       &:nth-child(2) {
+//         opacity: 0.4;
+//         animation: arrowDown 0.5s ease-in infinite alternate 0.1s;
+//       }
+//       &:nth-child(3) {
+//         animation: arrowDown 0.5s ease-in infinite alternate;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes arrowDown {
+//   to {
+//     translate: 0px 10px;
+//   }
+// }
+
+//original keyframe for animation on div(.arrow)
+// @keyframes arrowDown {
+//   to {
+//     transform: translateX(10px);
+//   }
+// }
+
+// !testing different approach without absolute positioning
+// still on test
+
+.arrow-div {
+  cursor: pointer;
+
+  margin-top: 30px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+    border: 2px solid #00df9a;
+    border-top: 0;
+    border-right: 0;
+    margin: 0;
+    padding: 0;
+    //   was trying with different durations
+    &:nth-child(1) {
+      opacity: 0.1;
+      animation: arrowDown 0.5s ease-in infinite alternate 0.2s;
+    }
+    &:nth-child(2) {
+      opacity: 0.4;
+      animation: arrowDown 0.5s ease-in infinite alternate 0.1s;
+    }
+    &:nth-child(3) {
+      animation: arrowDown 0.5s ease-in infinite alternate;
+    }
+  }
+}
+
+@keyframes arrowDown {
+  to {
+    translate: 0px 16px;
+  }
+}
